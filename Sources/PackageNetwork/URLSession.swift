@@ -1,7 +1,7 @@
 
 import Foundation
 
-// porque hay que ponerlo como public extension?
+
 @available(iOS 15.0, *)
 public extension URLSession {
     
