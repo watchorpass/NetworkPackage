@@ -11,7 +11,7 @@ import Foundation
 public extension URLRequest {
     
     @available(iOS 16.0, *)
-    static func get(url: URL, token: String? = nil, queryItems: [URLQueryItem]) async throws -> URLRequest {
+    static func get(url: URL, token: String? = nil) async throws -> URLRequest {
         
         var request = URLRequest(url: url)
         let headers = [
@@ -22,7 +22,7 @@ public extension URLRequest {
         request.timeoutInterval = 30
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = headers
-        request.url?.append(queryItems: queryItems)
+
         
         return request
     }

@@ -7,6 +7,7 @@
 
 import Foundation
 
+@available(iOS 13.0.0, *)
 public protocol NetworkInteractor {
     func getJSONFromURL<T>(request: URLRequest, type: T.Type) async throws -> T where T:Codable
 }

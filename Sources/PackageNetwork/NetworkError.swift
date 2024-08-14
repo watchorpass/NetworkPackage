@@ -14,7 +14,7 @@ enum NetworkError: LocalizedError{
     var errorDescription: String {
         switch self {
         case .nonHTTPURLResponse:
-            "Can not cast to HTTURLResponse"
+            "Can not cast to HTTURLResponse."
         case .badStatusCode(let statusCode):
             "Bad Status code: \(statusCode)."
         case .JSONDecoderError(let decodeError):
