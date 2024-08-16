@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 public extension URLRequest {
     
     @available(iOS 16.0, *)
@@ -23,7 +22,6 @@ public extension URLRequest {
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = headers
 
-        
         return request
     }
 }

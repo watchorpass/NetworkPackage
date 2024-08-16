@@ -26,6 +26,5 @@ public extension NetworkInteractor {
         } catch {
             throw NetworkError.JSONDecoderError(error)
         }
-        
     }
 }
